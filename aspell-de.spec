@@ -11,6 +11,7 @@ Group:		Applications/Text
 Source0:	http://aspell.sourceforge.net/%{name}-%{version}-%{subv}.tar.bz2
 URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell
+BuildRequires:	pspell-devel
 Requires:	aspell
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,15 +41,14 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 mv -f doc/{README,README.de}
-gzip -9nf README doc/{BUGS,README.*,RSR,TODO}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/{BUGS,TODO}.gz
-%lang(de) %doc doc/{README.*,RSR}.gz
+%doc README doc/{BUGS,TODO}
+%lang(de) %doc doc/{README.*,RSR}
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
 %{_datadir}/pspell/*
