@@ -4,7 +4,7 @@ Summary(pl):	Niemiecki s³ownik dla aspella
 Name:		aspell-de
 Version:	20030222
 %define	subv	1
-Release:	3
+Release:	1
 Epoch:		1
 License:	GPL v2
 Group:		Applications/Text
