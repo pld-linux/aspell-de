@@ -1,6 +1,6 @@
 Summary:	German dictionary for aspell
 Summary(de):	Ein deutsches W顤terbuch f�r aspell
-Summary(pl):	Niemiecki s這wnik dla aspella
+Summary(pl):	S這wnik niemiecki dla aspella
 Name:		aspell-de
 Version:	0.50
 %define	subv	2
@@ -23,7 +23,7 @@ Ein deutsches W顤terbuch zur Rechtschreibkontrolle nach den neuen
 Rechtschreibregeln mit aspell.
 
 %description -l pl
-Niemiecki s這wnik (lista s堯w) dla aspella.
+S這wnik (lista s堯w) niemiecki dla aspella.
 
 %prep
 %setup -q -n %{name}-%{version}-%{subv}
