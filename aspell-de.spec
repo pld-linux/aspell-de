@@ -2,17 +2,17 @@ Summary:	German dictionary for aspell
 Summary(de):	Ein deutsches Wörterbuch für aspell
 Summary(pl):	Niemiecki s³ownik dla aspella
 Name:		aspell-de
-Version:	0.50
-%define	subv	2
+Version:	20030222
+%define	subv	1
 Release:	3
 Epoch:		1
 License:	GPL v2
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/de/%{name}-%{version}-%{subv}.tar.bz2
-# Source0-md5:	204a9737ff0110fb8c7d284bd7200f7d
+Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/de/aspell6-de-%{version}-%{subv}.tar.bz2
+# Source0-md5:	5950c5c8a36fc93d4d7616591bace6a6
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell >= 0.50.0
-Requires:	aspell >= 0.50.0
+BuildRequires:	aspell >= 3:0.60
+Requires:	aspell >= 3:0.60
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,7 +26,7 @@ Rechtschreibregeln mit aspell.
 Niemiecki s³ownik (lista s³ów) dla aspella.
 
 %prep
-%setup -q -n %{name}-%{version}-%{subv}
+%setup -q -n aspell6-de-%{version}-%{subv}
 
 %build
 # note: configure is not autoconf-generated
@@ -40,14 +40,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-mv -f doc/{README,README.de}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Copyright README doc/{BUGS,TODO}
-%lang(de) %doc doc/{README.*,RSR}
+%doc README doc/notes.txt
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
