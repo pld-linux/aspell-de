@@ -2,17 +2,16 @@ Summary:	German dictionary for aspell
 Summary(de):	Ein deutsches Wörterbuch für aspell
 Summary(pl):	Niemiecki s³ownik dla aspella
 Name:		aspell-de
-Version:	0.1
-%define	subv	3
+Version:	0.50
+%define	subv	2
 Release:	1
 Epoch:		1
 License:	GPL v2
 Group:		Applications/Text
-Source0:	http://aspell.sourceforge.net/%{name}-%{version}-%{subv}.tar.bz2
+Source0:	ftp://ftp.gnu.org/gnu/aspell/%{name}-%{version}-%{subv}.tar.bz2
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell
-BuildRequires:	pspell-devel
-Requires:	aspell
+BuildRequires:	aspell >= 0.50.0
+Requires:	aspell >= 0.50.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,8 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README doc/{BUGS,TODO}
+%doc Copyright README doc/{BUGS,TODO}
 %lang(de) %doc doc/{README.*,RSR}
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
-%{_datadir}/pspell/*
