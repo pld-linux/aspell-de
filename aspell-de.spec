@@ -21,7 +21,7 @@ German dictionary (i.e. word list) for aspell.
 %description -l de
 Ein deutsches Wörterbuch zur Rechtschreibkontrolle nach den neuen
 Rechtschreibregeln mit aspell.
-    
+
 %description -l pl
 Niemiecki s³ownik (lista s³ów) dla aspella.
 
