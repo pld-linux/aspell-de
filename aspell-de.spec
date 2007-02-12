@@ -1,6 +1,6 @@
 Summary:	German dictionary for aspell
-Summary(de.UTF-8):   Ein deutsches Wörterbuch für aspell
-Summary(pl.UTF-8):   Niemiecki słownik dla aspella
+Summary(de.UTF-8):	Ein deutsches Wörterbuch für aspell
+Summary(pl.UTF-8):	Niemiecki słownik dla aspella
 Name:		aspell-de
 Version:	20030222
 %define	subv	1
