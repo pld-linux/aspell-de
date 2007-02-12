@@ -1,6 +1,6 @@
 Summary:	German dictionary for aspell
-Summary(de):	Ein deutsches Wörterbuch für aspell
-Summary(pl):	Niemiecki s³ownik dla aspella
+Summary(de.UTF-8):   Ein deutsches WÃ¶rterbuch fÃ¼r aspell
+Summary(pl.UTF-8):   Niemiecki sÅ‚ownik dla aspella
 Name:		aspell-de
 Version:	20030222
 %define	subv	1
@@ -18,12 +18,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 German dictionary (i.e. word list) for aspell.
 
-%description -l de
-Ein deutsches Wörterbuch zur Rechtschreibkontrolle nach den neuen
+%description -l de.UTF-8
+Ein deutsches WÃ¶rterbuch zur Rechtschreibkontrolle nach den neuen
 Rechtschreibregeln mit aspell.
 
-%description -l pl
-Niemiecki s³ownik (lista s³ów) dla aspella.
+%description -l pl.UTF-8
+Niemiecki sÅ‚ownik (lista sÅ‚Ã³w) dla aspella.
 
 %prep
 %setup -q -n aspell6-de-%{version}-%{subv}
