@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Niemiecki słownik dla aspella
 Name:		aspell-de
 Version:	20161207
 %define	subv	7-0
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL v2+
 Group:		Applications/Text
