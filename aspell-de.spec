@@ -13,6 +13,7 @@ Source0:	https://ftp.gnu.org/gnu/aspell/dict/de/aspell6-de-%{version}-%{subv}.ta
 URL:		http://aspell.net/
 BuildRequires:	aspell >= 3:0.60
 Requires:	aspell >= 3:0.60
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -49,16 +50,16 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Copyright doc/{Credits,README}
 %lang(de) %doc doc/RSR
-%{_libdir}/aspell/de-common.rws
-%{_libdir}/aspell/de.multi
-%{_libdir}/aspell/de_AT-only.rws
-%{_libdir}/aspell/de_AT.multi
-%{_libdir}/aspell/de_CH-only.rws
-%{_libdir}/aspell/de_CH.multi
-%{_libdir}/aspell/de_DE-only.rws
-%{_libdir}/aspell/de_DE.multi
-%{_libdir}/aspell/deutsch.alias
-%{_libdir}/aspell/german.alias
+%{_prefix}/lib/aspell/de-common.rws
+%{_prefix}/lib/aspell/de.multi
+%{_prefix}/lib/aspell/de_AT-only.rws
+%{_prefix}/lib/aspell/de_AT.multi
+%{_prefix}/lib/aspell/de_CH-only.rws
+%{_prefix}/lib/aspell/de_CH.multi
+%{_prefix}/lib/aspell/de_DE-only.rws
+%{_prefix}/lib/aspell/de_DE.multi
+%{_prefix}/lib/aspell/deutsch.alias
+%{_prefix}/lib/aspell/german.alias
 %{_datadir}/aspell/de.dat
 %{_datadir}/aspell/de_affix.dat
 %{_datadir}/aspell/de_phonet.dat
